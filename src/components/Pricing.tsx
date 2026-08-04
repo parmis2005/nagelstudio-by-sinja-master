@@ -21,7 +21,7 @@ export default function Pricing() {
         <p className="text-base leading-relaxed text-ink/70">
           Alle Preise verstehen sich als Richtwerte – je nach Aufwand kann der
           tatsächliche Preis variieren. Die verbindliche Terminplanung und
-          Buchung erfolgt über Terminpanda.
+          Buchung erfolgt nach persönlicher Abstimmung.
         </p>
       </AnimatedSection>
 
@@ -99,8 +99,6 @@ export default function Pricing() {
       <AnimatedSection className="mt-14 text-center" delay={0.1}>
         <a
           href={site.bookingUrl}
-          target="_blank"
-          rel="noopener noreferrer"
           className="rounded-full bg-rose px-7 py-3.5 text-sm font-medium tracking-wide text-cream shadow-sm transition-all hover:bg-rose-dark hover:shadow-md"
         >
           Jetzt Termin buchen

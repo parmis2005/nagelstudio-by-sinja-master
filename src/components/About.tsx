@@ -14,8 +14,8 @@ export default function About() {
           </h2>
           <div className="divider-flourish my-6 w-24" />
           <p className="text-base leading-relaxed text-ink/80">
-            Ich bin Sinja – Nageldesignerin mit Leidenschaft für Handarbeit und
-            Details. In meinem Studio in Nieukerk kümmere ich mich persönlich
+            Ich bin Mira – Nageldesignerin mit Leidenschaft für Handarbeit und
+            Details. In meinem Studio in Beispielstadt kümmere ich mich persönlich
             um jede Kundin: von der klassischen Maniküre bis zur
             aufwendigen Nailart.
           </p>
@@ -28,17 +28,13 @@ export default function About() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
               href={site.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-rose-light px-5 py-2.5 text-sm font-medium text-plum transition-colors hover:bg-rose hover:text-cream"
             >
               <InstagramIcon className="h-4 w-4" strokeWidth={1.5} />
-              @nagelstudio_by_sinja
+              {site.instagramHandle}
             </a>
             <a
               href={site.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
               className="border-b-2 border-rose pb-1 text-sm font-medium tracking-wide text-plum transition-colors hover:text-rose"
             >
               Termin buchen
@@ -50,7 +46,7 @@ export default function About() {
           <div className="relative">
             <div className="h-72 w-72 overflow-hidden rounded-[3rem] border-8 border-cream-dark shadow-xl sm:h-80 sm:w-80">
               <Image
-                src="/images/profile-sinja-hd.webp"
+                src="/images/profile-mira-hd.webp"
                 alt={site.owner}
                 width={320}
                 height={320}

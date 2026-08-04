@@ -71,8 +71,6 @@ export default function Gallery() {
         <AnimatedSection className="mt-14 text-center" delay={0.1}>
           <a
             href={site.instagramUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-plum/30 px-7 py-3.5 text-sm font-medium tracking-wide text-plum transition-all hover:bg-plum hover:text-cream"
           >
             <InstagramIcon className="h-4 w-4" strokeWidth={1.5} />

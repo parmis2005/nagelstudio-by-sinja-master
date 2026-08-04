@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Yeseva_One, Caveat, Poppins } from "next/font/google";
+import { site } from "@/lib/data";
 import "./globals.css";
 
 const yeseva = Yeseva_One({
@@ -20,9 +21,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Nagelstudio by Sinja | Nieukerk",
+  title: `${site.name} | Beispielstadt`,
   description:
-    "Nagelstudio by Sinja in Nieukerk (Kerken): Nagelmodellage, Naturnagelverstärkung, Nailart, Maniküre & Pediküre. Jetzt online Termin buchen.",
+    `${site.name} in Beispielstadt: Nagelmodellage, Naturnagelverstärkung, Nailart, Maniküre & Pediküre. Termine direkt per Kontaktanfrage abstimmen.`,
 };
 
 export default function RootLayout({

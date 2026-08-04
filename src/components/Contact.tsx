@@ -19,8 +19,6 @@ export default function Contact() {
           <div className="divider-flourish mx-auto my-6 w-24 [&::before]:bg-plum" />
           <a
             href={site.bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="mt-4 inline-block rounded-full bg-rose px-8 py-4 text-sm font-medium tracking-wide text-cream shadow-lg transition-all hover:bg-rose-dark hover:shadow-xl"
           >
             Online Termin buchen
@@ -54,11 +52,9 @@ export default function Contact() {
               </a>
               <a
                 href={site.instagramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-sm text-cream/85 transition-colors hover:text-rose-light"
               >
-                @nagelstudio_by_sinja
+                {site.instagramHandle}
               </a>
             </div>
           </AnimatedSection>
@@ -87,7 +83,7 @@ export default function Contact() {
 
         <AnimatedSection delay={0.2} className="mt-10 overflow-hidden rounded-2xl">
           <iframe
-            title="Standort Nagelstudio by Sinja"
+            title={`Standort ${site.name}`}
             src={site.mapEmbedUrl}
             className="h-80 w-full grayscale"
             style={{ border: 0 }}

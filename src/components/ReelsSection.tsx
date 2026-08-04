@@ -19,16 +19,16 @@ export default function ReelsSection() {
               muted
               playsInline
               preload="metadata"
-              poster="/images/sinja-reel-poster.jpg"
+              poster="/images/mira-reel-poster.jpg"
               aria-label="Nailart Reel aus dem Studio"
             >
-              <source src="/videos/sinja-reel-nails.webm" type="video/webm" />
-              <source src="/videos/sinja-reel-nails.mp4" type="video/mp4" />
+              <source src="/videos/mira-reel-nails.webm" type="video/webm" />
+              <source src="/videos/mira-reel-nails.mp4" type="video/mp4" />
               Dein Browser unterstützt die Videowiedergabe nicht.
             </video>
             <Image
-              src="/images/sinja-reel-poster.jpg"
-              alt="Nailart Reel von Nagelstudio by Sinja"
+              src="/images/mira-reel-poster.jpg"
+              alt={`Nailart Reel von ${site.name}`}
               fill
               sizes="350px"
               className="hidden object-cover motion-reduce:block"
@@ -39,7 +39,7 @@ export default function ReelsSection() {
               <div className="flex items-center gap-2 rounded-full bg-ink/25 px-3 py-2 backdrop-blur-md">
                 <InstagramIcon className="h-4 w-4" strokeWidth={1.7} />
                 <span className="text-[0.62rem] font-medium tracking-wide">
-                  @nagelstudio_by_sinja
+                  {site.instagramHandle}
                 </span>
               </div>
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-cream/15 backdrop-blur-md">
@@ -79,8 +79,6 @@ export default function ReelsSection() {
               <a
                 key={src}
                 href={site.instagramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
                 aria-label={`Weitere Nailart auf Instagram ansehen ${index + 1}`}
                 className="group relative aspect-[4/5] overflow-hidden rounded-xl bg-rose-light"
               >
@@ -98,8 +96,6 @@ export default function ReelsSection() {
 
           <a
             href={site.instagramUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="mt-9 inline-flex items-center gap-3 rounded-full bg-plum px-6 py-3.5 text-sm font-medium tracking-wide text-cream transition-all hover:-translate-y-0.5 hover:bg-plum-light hover:shadow-lg"
           >
             Alle Reels auf Instagram

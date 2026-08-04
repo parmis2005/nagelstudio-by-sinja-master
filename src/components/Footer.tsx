@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="grid gap-10 sm:grid-cols-3">
           <div>
             <p className="section-heading text-xl text-cream">
-              Nagelstudio <span className="script-accent text-2xl">by Sinja</span>
+              Nagelstudio <span className="script-accent text-2xl">by Mira</span>
             </p>
             <p className="mt-3 text-sm leading-relaxed">
               {site.address.street}
@@ -29,12 +29,10 @@ export default function Footer() {
             </p>
             <a
               href={site.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
               className="mt-4 inline-flex items-center gap-2 text-sm transition-colors hover:text-rose-light"
             >
               <InstagramIcon className="h-4 w-4" strokeWidth={1.5} />
-              @nagelstudio_by_sinja
+              {site.instagramHandle}
             </a>
           </div>
 
@@ -69,8 +67,6 @@ export default function Footer() {
             </a>
             <a
               href={site.bookingUrl}
-              target="_blank"
-              rel="noopener noreferrer"
               className="mt-4 inline-block rounded-full bg-rose px-5 py-2.5 text-sm font-medium text-cream transition-colors hover:bg-rose-dark"
             >
               Termin buchen

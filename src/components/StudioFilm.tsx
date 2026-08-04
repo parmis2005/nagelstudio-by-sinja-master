@@ -22,10 +22,10 @@ export default function StudioFilm() {
               aria-label="Filmische Einblicke in Nagelstudio und Nailart"
             >
               <source
-                src="/videos/sinja-studio-film.webm"
+                src="/videos/mira-studio-film.webm"
                 type="video/webm"
               />
-              <source src="/videos/sinja-studio-film.mp4" type="video/mp4" />
+              <source src="/videos/mira-studio-film.mp4" type="video/mp4" />
               Dein Browser unterstützt die Videowiedergabe nicht.
             </video>
             <Image
@@ -69,13 +69,11 @@ export default function StudioFilm() {
 
           <a
             href={site.bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-3 rounded-full bg-plum px-6 py-3.5 text-sm font-medium tracking-wide text-cream transition-all hover:-translate-y-0.5 hover:bg-plum-light hover:shadow-xl"
           >
             Deinen Termin reservieren
             <span aria-hidden className="text-lg leading-none">
-              ↗
+              ↓
             </span>
           </a>
         </AnimatedSection>

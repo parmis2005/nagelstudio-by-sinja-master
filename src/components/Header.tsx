@@ -47,7 +47,7 @@ export default function Header() {
             scrolled ? "text-plum" : "text-plum",
           )}
         >
-          Nagelstudio <span className="script-accent text-2xl">by Sinja</span>
+          Nagelstudio <span className="script-accent text-2xl">by Mira</span>
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -72,8 +72,6 @@ export default function Header() {
           </a>
           <a
             href={site.bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="rounded-full bg-rose px-5 py-2.5 text-sm font-medium text-cream shadow-sm transition-all hover:bg-rose-dark hover:shadow-md"
           >
             Termin buchen
@@ -118,8 +116,7 @@ export default function Header() {
               </a>
               <a
                 href={site.bookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
                 className="mt-2 rounded-full bg-rose px-5 py-3 text-center text-sm font-medium text-cream"
               >
                 Termin buchen

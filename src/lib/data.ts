@@ -1,17 +1,18 @@
 export const site = {
-  name: "Nagelstudio by Sinja",
-  owner: "Sinja van Meegen",
+  name: "Nagelstudio by Mira",
+  owner: "Mira Hoffmann",
   tagline: "Handgemachte Nagelkunst mit Liebe zum Detail",
-  phone: "01575 7185533",
-  phoneHref: "tel:+4915757185533",
+  phone: "01234 567890",
+  phoneHref: "tel:+491234567890",
   address: {
-    street: "Friedensstr. 20",
-    zipCity: "47647 Nieukerk",
+    street: "Musterallee 12",
+    zipCity: "12345 Beispielstadt",
   },
-  bookingUrl: "https://terminpanda.de/anbieter/NagelstudiobySinja+p817im",
-  instagramUrl: "https://www.instagram.com/nagelstudio_by_sinja/",
+  bookingUrl: "#kontakt",
+  instagramHandle: "@studio_mira_beispiel",
+  instagramUrl: "#kontakt",
   mapEmbedUrl:
-    "https://www.google.com/maps?q=Friedensstr.+20,+47647+Nieukerk&output=embed",
+    "https://www.google.com/maps?q=Musterallee+12,+12345+Beispielstadt&output=embed",
 };
 
 export const openingHours = [

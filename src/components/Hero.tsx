@@ -163,8 +163,6 @@ export default function Hero() {
         <span className="h-14 w-px bg-plum/30" />
         <a
           href={site.instagramUrl}
-          target="_blank"
-          rel="noopener noreferrer"
           className="text-plum/70 transition-colors hover:text-rose"
           aria-label="Instagram"
         >
@@ -226,8 +224,6 @@ export default function Hero() {
               <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
                 <a
                   href={site.bookingUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="rounded-full bg-rose px-7 py-3.5 text-sm font-medium tracking-wide text-cream shadow-lg transition-all hover:bg-rose-dark hover:shadow-xl"
                 >
                   Jetzt Termin buchen
