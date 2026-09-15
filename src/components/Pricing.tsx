@@ -5,7 +5,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { clsx } from "clsx";
 import AnimatedSection from "./AnimatedSection";
-import { priceCategories, site } from "@/lib/data";
+import { priceCategories } from "@/lib/data";
+import { BookingButton } from "./BookingModal";
 
 export default function Pricing() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -97,12 +98,9 @@ export default function Pricing() {
       </div>
 
       <AnimatedSection className="mt-14 text-center" delay={0.1}>
-        <a
-          href={site.bookingUrl}
-          className="rounded-full bg-rose px-7 py-3.5 text-sm font-medium tracking-wide text-cream shadow-sm transition-all hover:bg-rose-dark hover:shadow-md"
-        >
+        <BookingButton className="rounded-full bg-rose px-7 py-3.5 text-sm font-medium tracking-wide text-cream shadow-sm transition-all hover:bg-rose-dark hover:shadow-md">
           Jetzt Termin buchen
-        </a>
+        </BookingButton>
       </AnimatedSection>
     </section>
   );

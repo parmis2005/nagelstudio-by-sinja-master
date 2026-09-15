@@ -4,11 +4,11 @@ export const site = {
   tagline: "Handgemachte Nagelkunst mit Liebe zum Detail",
   phone: "01234 567890",
   phoneHref: "tel:+491234567890",
+  email: "info@nagelstudio-mira-beispiel.de",
   address: {
     street: "Musterallee 12",
     zipCity: "12345 Beispielstadt",
   },
-  bookingUrl: "#kontakt",
   instagramHandle: "@studio_mira_beispiel",
   instagramUrl: "#kontakt",
   mapEmbedUrl:

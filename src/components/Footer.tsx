@@ -1,6 +1,7 @@
 import { Phone } from "lucide-react";
 import InstagramIcon from "./icons/InstagramIcon";
 import { site } from "@/lib/data";
+import { BookingButton } from "./BookingModal";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -65,12 +66,9 @@ export default function Footer() {
               <Phone className="h-4 w-4" strokeWidth={1.5} />
               {site.phone}
             </a>
-            <a
-              href={site.bookingUrl}
-              className="mt-4 inline-block rounded-full bg-rose px-5 py-2.5 text-sm font-medium text-cream transition-colors hover:bg-rose-dark"
-            >
+            <BookingButton className="mt-4 inline-block rounded-full bg-rose px-5 py-2.5 text-sm font-medium text-cream transition-colors hover:bg-rose-dark">
               Termin buchen
-            </a>
+            </BookingButton>
           </div>
         </div>
 

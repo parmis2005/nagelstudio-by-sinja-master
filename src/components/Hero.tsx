@@ -7,6 +7,7 @@ import { ChevronDown } from "lucide-react";
 import { clsx } from "clsx";
 import { site } from "@/lib/data";
 import InstagramIcon from "./icons/InstagramIcon";
+import { BookingButton } from "./BookingModal";
 
 type Side = "left" | "right";
 
@@ -222,12 +223,9 @@ export default function Hero() {
               </p>
 
               <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
-                <a
-                  href={site.bookingUrl}
-                  className="rounded-full bg-rose px-7 py-3.5 text-sm font-medium tracking-wide text-cream shadow-lg transition-all hover:bg-rose-dark hover:shadow-xl"
-                >
+                <BookingButton className="rounded-full bg-rose px-7 py-3.5 text-sm font-medium tracking-wide text-cream shadow-lg transition-all hover:bg-rose-dark hover:shadow-xl">
                   Jetzt Termin buchen
-                </a>
+                </BookingButton>
                 <a
                   href="#leistungen"
                   className="rounded-full border border-plum/40 px-7 py-3.5 text-sm font-medium tracking-wide text-plum transition-all hover:bg-plum hover:text-cream"

@@ -2,6 +2,7 @@ import Image from "next/image";
 import InstagramIcon from "./icons/InstagramIcon";
 import AnimatedSection from "./AnimatedSection";
 import { site } from "@/lib/data";
+import { BookingButton } from "./BookingModal";
 
 export default function About() {
   return (
@@ -33,12 +34,9 @@ export default function About() {
               <InstagramIcon className="h-4 w-4" strokeWidth={1.5} />
               {site.instagramHandle}
             </a>
-            <a
-              href={site.bookingUrl}
-              className="border-b-2 border-rose pb-1 text-sm font-medium tracking-wide text-plum transition-colors hover:text-rose"
-            >
+            <BookingButton className="border-b-2 border-rose pb-1 text-sm font-medium tracking-wide text-plum transition-colors hover:text-rose">
               Termin buchen
-            </a>
+            </BookingButton>
           </div>
         </AnimatedSection>
 

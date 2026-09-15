@@ -1,6 +1,7 @@
 import { Clock, MapPin, Phone } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import { openingHours, site } from "@/lib/data";
+import { BookingButton } from "./BookingModal";
 
 export default function Contact() {
   return (
@@ -17,12 +18,9 @@ export default function Contact() {
             Wir freuen uns auf dich
           </h2>
           <div className="divider-flourish mx-auto my-6 w-24 [&::before]:bg-plum" />
-          <a
-            href={site.bookingUrl}
-            className="mt-4 inline-block rounded-full bg-rose px-8 py-4 text-sm font-medium tracking-wide text-cream shadow-lg transition-all hover:bg-rose-dark hover:shadow-xl"
-          >
+          <BookingButton className="mt-4 inline-block rounded-full bg-rose px-8 py-4 text-sm font-medium tracking-wide text-cream shadow-lg transition-all hover:bg-rose-dark hover:shadow-xl">
             Online Termin buchen
-          </a>
+          </BookingButton>
         </AnimatedSection>
 
         <div className="mt-16 grid gap-8 lg:grid-cols-3">

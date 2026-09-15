@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Phone, X } from "lucide-react";
 import { clsx } from "clsx";
 import { site } from "@/lib/data";
+import { BookingButton } from "./BookingModal";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -70,12 +71,9 @@ export default function Header() {
             <Phone className="h-4 w-4" strokeWidth={1.5} />
             {site.phone}
           </a>
-          <a
-            href={site.bookingUrl}
-            className="rounded-full bg-rose px-5 py-2.5 text-sm font-medium text-cream shadow-sm transition-all hover:bg-rose-dark hover:shadow-md"
-          >
+          <BookingButton className="rounded-full bg-rose px-5 py-2.5 text-sm font-medium text-cream shadow-sm transition-all hover:bg-rose-dark hover:shadow-md">
             Termin buchen
-          </a>
+          </BookingButton>
         </div>
 
         <button
@@ -114,13 +112,12 @@ export default function Header() {
                 <Phone className="h-4 w-4" strokeWidth={1.5} />
                 {site.phone}
               </a>
-              <a
-                href={site.bookingUrl}
+              <BookingButton
                 onClick={() => setOpen(false)}
                 className="mt-2 rounded-full bg-rose px-5 py-3 text-center text-sm font-medium text-cream"
               >
                 Termin buchen
-              </a>
+              </BookingButton>
             </nav>
           </motion.div>
         )}

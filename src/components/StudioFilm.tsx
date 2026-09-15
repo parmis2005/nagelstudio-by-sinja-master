@@ -1,6 +1,6 @@
 import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
-import { site } from "@/lib/data";
+import { BookingButton } from "./BookingModal";
 
 export default function StudioFilm() {
   return (
@@ -67,15 +67,12 @@ export default function StudioFilm() {
             nicht einfach nur zum nächsten Trend.
           </p>
 
-          <a
-            href={site.bookingUrl}
-            className="mt-8 inline-flex items-center gap-3 rounded-full bg-plum px-6 py-3.5 text-sm font-medium tracking-wide text-cream transition-all hover:-translate-y-0.5 hover:bg-plum-light hover:shadow-xl"
-          >
+          <BookingButton className="mt-8 inline-flex items-center gap-3 rounded-full bg-plum px-6 py-3.5 text-sm font-medium tracking-wide text-cream transition-all hover:-translate-y-0.5 hover:bg-plum-light hover:shadow-xl">
             Deinen Termin reservieren
             <span aria-hidden className="text-lg leading-none">
               ↓
             </span>
-          </a>
+          </BookingButton>
         </AnimatedSection>
       </div>
     </section>

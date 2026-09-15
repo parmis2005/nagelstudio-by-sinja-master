@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Yeseva_One, Caveat, Poppins } from "next/font/google";
 import { site } from "@/lib/data";
+import { BookingProvider } from "@/components/BookingModal";
 import "./globals.css";
 
 const yeseva = Yeseva_One({
@@ -37,7 +38,7 @@ export default function RootLayout({
       className={`${yeseva.variable} ${caveat.variable} ${poppins.variable} scroll-smooth`}
     >
       <body className="min-h-screen bg-cream text-ink antialiased">
-        {children}
+        <BookingProvider>{children}</BookingProvider>
       </body>
     </html>
   );
