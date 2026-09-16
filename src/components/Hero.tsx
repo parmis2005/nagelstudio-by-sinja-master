@@ -89,7 +89,7 @@ function PersonCutout({
   focus: string;
 }) {
   return (
-    <div className="relative mx-auto aspect-[4/5] h-[74vh] max-h-[680px] w-auto">
+    <div className="relative mx-auto aspect-[4/5] h-[52vh] max-h-[680px] w-auto lg:h-[74vh]">
       <RotatingRing />
       <AnimatePresence mode="wait">
         <motion.div
@@ -155,7 +155,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex h-[100svh] min-h-[640px] w-full overflow-hidden"
+      className="relative flex min-h-[640px] w-full overflow-hidden lg:h-[100svh]"
     >
       <SlideBackground index={index} />
 
@@ -187,10 +187,10 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="relative mx-auto grid h-full w-full max-w-7xl gap-10 px-6 lg:grid-cols-2 lg:gap-6 lg:px-16">
+      <div className="relative mx-auto grid w-full max-w-7xl gap-10 px-6 py-8 lg:h-full lg:grid-cols-2 lg:gap-6 lg:px-16 lg:py-0">
         <div
           className={clsx(
-            "relative z-10 flex flex-col items-center justify-center pt-20 text-center lg:items-start lg:pt-0 lg:text-left",
+            "relative z-10 flex flex-col items-center justify-center pt-16 text-center lg:items-start lg:pt-0 lg:text-left",
             textSide === "right" && "lg:order-2 lg:items-end lg:text-right",
           )}
         >
@@ -239,11 +239,11 @@ export default function Hero() {
 
         <div
           className={clsx(
-            "relative h-full",
+            "relative lg:h-full",
             textSide === "right" && "lg:order-1",
           )}
         >
-          <div className="absolute inset-x-0 bottom-0">
+          <div className="relative lg:absolute lg:inset-x-0 lg:bottom-0">
             <PersonCutout
               index={index}
               side={slide.personSide}
